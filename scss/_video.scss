@@ -1,0 +1,33 @@
+.video__area{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    & .overly__bg{
+        background: $black-color;
+        opacity: .8;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+    & .my__btn {
+    background: rgba(0,0,0,0);
+    z-index: 9;
+    position: relative;
+    color: $white-color;
+    padding: 30px 40px;
+    font-size: 15px;
+    letter-spacing: 8px;
+    @include hover-transition(.3s);
+
+    &:hover{
+        background-color: $primary-color;
+
+    }
+}
+}

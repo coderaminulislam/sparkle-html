@@ -1,0 +1,20 @@
+.single__countdown{
+    background: $white-color;
+    padding: 15px 30px;
+
+    & .counter__value{
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: $fontBB;
+        letter-spacing: 4px;
+        color: $black-color;
+        display: inline-block;
+
+    }
+    & h4{
+        font-size: 13px;
+        font-weight: $fontMD;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+}

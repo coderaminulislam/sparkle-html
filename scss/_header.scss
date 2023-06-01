@@ -1,0 +1,101 @@
+
+// Header css
+
+header{
+    background: transparent;
+    z-index: 99;
+    position: relative;
+    padding: 15px 0;
+
+
+     & #mobile-nav{
+        z-index: 3;
+        cursor: pointer;
+     }
+
+
+  
+}
+
+header.sticky.scroll-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background:$black-color;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    background: $black-color;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 22;
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    @include hover-transition(.3s);
+
+    @media #{$xs}  {
+        width: 30vw;
+    }
+
+   & #close-btn {
+        position: absolute;
+        top: 23px;
+        left: 200px;
+        @media #{$xs, $sm}{
+            left: 50px;
+        }
+        @media #{$md, $lg}{
+            left: 80px;
+        }
+        @media #{$xl, $xxl}{
+            left: 130px;
+        }
+
+        & i{
+            font-size: 35px;
+            color: $primary-color;
+        }
+    }
+
+
+    & .menu {
+        list-style: none;
+        margin: auto;
+
+        & li{
+            margin-bottom: 20px;
+        }
+ 
+
+
+        & li a{
+            color: $white-color;
+            font-size: 15px;
+            font-weight: $fontSB;
+            @include hover-transition(.3s);
+
+
+            &:hover{
+                color:$primary-color;
+            }
+
+        
+        }
+    }
+  
+}
+nav.active {
+    -webkit-box-shadow: -8px 0px 10px 0px rgba(17,18,20,0.3);
+    -moz-box-shadow: -8px 0px 10px 0px rgba(17,18,20,0.3);
+    box-shadow: -8px 0px 10px 0px rgba(17,18,20,0.3);
+    z-index: 9999;
+    transform: translateX(0%);
+    
+}
+

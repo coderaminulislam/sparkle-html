@@ -1,0 +1,87 @@
+footer{
+
+        & .footer__widget{
+            & img{
+               max-width:100px ;
+               margin-bottom: 25px;
+            }
+            & p{
+                color: $white-color;
+                font-size: 12px;
+                line-height: 24px;
+                font-weight: $fontSM;
+            }
+
+            & h4{
+                color: $white-color;
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: $fontSB;
+                margin-bottom: 20px;
+            }
+
+            & ul li{
+                margin-bottom: 10px;
+                display: block;
+
+                & a{
+                    color: $white-color;
+                    @include hover-transition(.3s);
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+
+            }
+
+            & .newsletter__form form{
+                background: $primary-color;
+                display: flex;
+                border-radius: 30px;
+                
+                & input{
+                    background: transparent;
+                    padding: 10px;
+                    border: none;
+                    width: 70%;
+                }
+
+                & button{
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    padding: 13px 20px;
+                    font-weight: $fontBB;
+                }
+            }
+
+            & .footer__social a{
+                margin-left: 20px;
+                background: $white-color;
+                padding: 10px;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                line-height: 1;
+                text-align: center;
+                display: inline-block;
+                font-size: 13px;
+                @include hover-transition(.5s);
+
+
+                & i{
+                    color: $black-color;
+                }
+
+                &:hover{
+                    background: $primary-color;
+                    & i{
+                        color: $white-color;
+                    }
+                }
+            }
+
+        }
+    
+}

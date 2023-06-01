@@ -1,0 +1,15 @@
+
+
+@mixin hover-transition($value){
+    -webkit-transition: all  $value;
+    -moz-transition: all  $value;
+      -o-transition: all $value;
+         transition: all  $value;
+}
+
+
+@mixin box-shadow{
+  box-shadow: 0 0 16px 0 #1b1b1b21;
+  -moz-box-shadow: 0 0 16px 0 #1b1b1b21 ;
+  -webkit-box-shadow: 0 0 16px 0 #1b1b1b21;
+}

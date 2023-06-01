@@ -1,0 +1,42 @@
+//hero section
+
+
+.hero__area{
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+    top: -110px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    & .hero__content h1{
+        font: {
+            size: 20px;
+            weight: $fontBB;
+        };
+        color: $white-color;
+        letter-spacing: 16px;
+        line-height: 35px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        @media #{$xs, $sm, $md}{
+            letter-spacing: 8px;
+        }
+    }
+    & .hero__content p{
+     font-size: 13px;
+     color: $white-color;
+     letter-spacing: 4px;
+     margin-bottom: 40px;
+    }
+   & .hero__content .my__btn{
+   
+        @include hover-transition(.3s);
+        &:hover{
+            background: transparent;
+            border-color: $primary-color;
+            color: $white-color;
+        }
+    }
+}

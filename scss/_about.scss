@@ -1,0 +1,17 @@
+// about 
+
+.about__area{
+    padding-bottom: 120px;
+    & .about__content img{
+        margin-bottom: 90px;
+        display: inline-block;
+    }
+    & .about__content p{
+        width: 50%;
+        margin: auto;
+        color: $text-color;
+        @media #{$xs, $sm, $md}{
+            width: 80%;
+        }
+    }
+}
